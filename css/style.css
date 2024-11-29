@@ -1,0 +1,115 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o container de cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: linear-gradient(45deg, #e0070b, #000000);
+    border-radius: 50%;
+    width: 300px;
+    height: 280px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para a imagem do veículo */
+.card img {
+    width: 50%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+/* Títulos e textos no card */
+.card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #fff;
+}
+
+/* Botões de interação */
+.card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #218838;
+}
+
+/* Estilos do tema escuro */
+body.dark-theme .card {
+    background: linear-gradient(45deg, #2b5876, #4e4376);
+}
+
+body.dark-theme .card h3,
+body.dark-theme .card p {
+    color: #f0f0f0;
+}
